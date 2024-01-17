@@ -5,3 +5,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.divider {
+    border-left: 2px solid rgb(195, 195, 195);
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop",
+    "desc": "We Provide Laptops from top brands such as Dell, Lenovo, HP, Acer, Asus and much more. We ensure Our Products are equipped with latest technology to meet the costumer standards. Our Laptops Can Be customized Based on the Clients requirements.",
+    "img": "./assets/images/Product_1.png",
+    "color": ""
+  },
+  {
+    "id": 2,
+    "title": "Networking Devices",
+    "desc": "Networking Devices include Switches, Routers, Firewalls, Access Points, Hubs and more. Our Machines are Mainly sourced from reputed brands such as Cisco, Fortinet, Dell, Netgear, Dlink etc.",
+    "img": "./assets/images/Product_2.png",
+    "color": ""
+  },
+  {
+    "id": 3,
+    "title": "Servers",
+    "desc": "Our Servers are sourced from the most valuable brands such as Dell, HP, Lenovo, IBM, Ngnix etc.We offer top-of-the-line servers that are designed to deliver superior performance, reliability, and security.",
+    "img": "./assets/images/Product_3.png",
+    "color": ""
+  },
+  {
+    "id": 4,
+    "title": "Desktop",
+    "desc": "We Provide Desktops from top brands such as Dell, Lenovo, HP, Acer, Asus and Much more. Our range of desktops include Tower PCs, Compact PCs, Mini PCs and Gaming PCs. Our Desktop PCs are powered with required technology to make it perfect deal for our clients.",
+    "img": "./assets/images/Product_4.png",
+    "color": ""
+  },
+  {
+    "id": 5,
+    "title": "Printers & Scanners",
+    "desc": "Our Range of Printers and Scanners include black and white and color printers,laser and inkjet printers, and flatbed and sheet-fed scanners Our Products are sourced from HP, Canon, Epson, kodak, konica etc.",
+    "img": "./assets/images/Product_5.png",
+    "color": ""
+  },
+  {
+    "id": 6,
+    "title": "Cloud Services",
+    "desc": "We Provide Cloud Services Such As Public Cloud, Private Cloud, Hybrid Cloud, Virtual Machines, Dedicated Servers, Cloud Storage and Managed Services.",
+    "img": "./assets/images/Product_6.png",
+    "color": ""
+  }
+]

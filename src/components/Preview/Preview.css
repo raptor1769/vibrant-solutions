@@ -16,15 +16,15 @@
 }
 
 .title-1 {
-  font-size: 17px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 16px;
+  /* line-height: 16px; */
   letter-spacing: 0.04em;
   text-align: center;
   color: #0343ff;
 }
 .title-2 {
-  font-size: 69px;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
   letter-spacing: -0.04em;
@@ -42,7 +42,7 @@
   color: rgba(0, 0, 0, 0.2);
 }
 .title-3 {
-  font-size: 16px;
+  font-size: 1.5rem;
   letter-spacing: -0.02em;
   text-align: center;
 }
@@ -50,7 +50,7 @@
 .preview-mesh {
   width: 100%;
   position: relative;
-  height: 638px;
+  height: 70vh;
 }
 
 .preview-mesh::before {
@@ -77,10 +77,10 @@
 
 .mesh-laptop {
   position: absolute;
-  width: 50%;
+  width: 40%;
   top: 20%;
-  left: 17%;
-  transform: rotate(-10deg);
+  left: 25%;
+  /* transform: rotate(-10deg); */
 }
 
 .mesh-cube-1 {
