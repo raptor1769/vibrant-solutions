@@ -11,7 +11,7 @@ const Header = ({ servicesRef, productsRef }) => {
       <div className="nav-container">
         <ScrollTo ref={servicesRef}>Services</ScrollTo>
         <ScrollTo ref={productsRef}>Products</ScrollTo>
-        <div className="nav-item">About Us</div>
+        {/* <div className="nav-item">About Us</div> */}
       </div>
       {/* <div className="button-container">
             <div className="call-button">Book a Call</div>

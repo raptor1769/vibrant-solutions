@@ -19,7 +19,7 @@ const Preview = forwardRef((props,ref) => {
       </div>
       <div className="preview-mesh">
         {/* <img className="mesh-bg" src={BgImg} alt="bg-mesh" /> */}
-        <img className="mesh-laptop preview-images" src={Laptop} alt="bg-mesh" />
+        <img className="mesh-laptop" src={Laptop} alt="bg-mesh" />
         <img className="mesh-cube-1 preview-images" src={Cube1} alt="bg-mesh" />
         <img className="mesh-cube-2 preview-images" src={Cube1} alt="bg-mesh" />
         <img className="mesh-cube-3 preview-images" src={Cube2} alt="bg-mesh" />

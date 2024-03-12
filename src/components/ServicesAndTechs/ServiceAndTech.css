@@ -29,6 +29,8 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .services-container {
@@ -81,27 +83,11 @@
   font-size: 2.1rem;
   font-style: normal;
   font-weight: 500;
+  margin: 16px auto;
 }
 
 
 
 @media only screen and (max-width:400px){
-  .service-component {
-    margin-top: 40px;
-    margin-left:28%;
-    width: 86%;
-
-  }
-  .service-header__title {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: -0.04em;
-  }
-  .service-header .service-header__sub-title {
-    margin-left: 10%;
-  }
-  .services-footer {
-    width:150%;
-  }
+  
 }
