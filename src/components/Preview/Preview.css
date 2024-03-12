@@ -105,3 +105,17 @@
   left: 2%;
   /* transform: rotate(180deg); */
 }
+
+
+@media only screen and (max-width:400px) {
+  .preview-container {
+    margin-left:29%;
+    margin-top: 18%;
+  }
+  .preview-mesh {
+    width:128%;
+  }
+  .mesh-cube-2 {
+    margin-left: 3%;
+  }
+}

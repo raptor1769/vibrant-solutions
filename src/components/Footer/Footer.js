@@ -1,7 +1,9 @@
 import "./Footer.css";
-import footerImg from "../../assets/images/Frame 5.png"
-
-const Footer = () => {
+import phone from "../../assets/images/phone.svg";
+import email from "../../assets/images/envelope.svg";
+import Logo from "../../assets/images/logo.png";
+import ScrollTo from "../common/ScrollTo/ScrollTo";
+const Footer = ({ servicesRef, productsRef,headerRef }) => {
   return (
     <>
       {/* <div className="footer">
@@ -34,31 +36,29 @@ const Footer = () => {
        </div>
      </div> */}
       <div className="ain-footer">
+        <div className="ain-footer-location-text">
+          <h1>Get in Touch!</h1>
+        </div>
         <div className="ain-footer-location">
           <div className="ain-footer-location__map">
-            <div className="ain-footer-location-text">
-              <h3>Get in Touch!</h3>
-            </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.2005506955566!2d78.48908013469449!3d17.44050606294828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b65be6d70f9%3A0x8ddfb841043ccd53!2sAiN%20Computers!5e0!3m2!1sen!2sin!4v1709966387337!5m2!1sen!2sin"
-              className="iframe-map"
-              style={{border:0}}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <iframe
+          className="map_frame"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.457107160586!2d78.45995309999999!3d17.3898375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97eaa5e0193f%3A0xb9f957f5ece16eb0!2sHyder%20Hussain%20Manzil!5e0!3m2!1sen!2sin!4v1710224492804!5m2!1sen!2sin" 
+           style={{"border":"0"}} allowfullscreen="" loading="lazy"
+           referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
           </div>
           <div className="footer-contact-section">
             <div>
               {/* <img src={footerImg} /> */}
             </div>
             <div className="contact-info">
-              <div></div>
-              <div>+91-1234567890</div>
+              <div className="bootstrap-icon"><img src={phone}></img></div>
+              <div className="bootstrap-content">+91-1234567890</div>
             </div>
             <div className="contact-info">
-              <div></div>
-              <div>demo@aintech.com</div>
+              <div className="bootstrap-icon"><img src={email}></img></div>
+              <div className="bootstrap-content">demo@aintech.com</div>
             </div>
             <div className="contact-info">
               <div></div>
@@ -68,17 +68,15 @@ const Footer = () => {
         </div>
         <div className="ain-footer-links">
           <div className="ain-footer-links-logo">
-            {/* <img src="logo.png" alt="Place the logo here" /> */}
+          <img src={Logo} alt="logo" className="logo-footer"/>
           </div>
 
           <div className="ain-footer-links-redirects">
-            <span>Company</span>
-            <span>Product</span>
-            <span>Support</span>
-            <span>Office</span>
+            <ScrollTo ref={servicesRef}>Services</ScrollTo>
+            <ScrollTo ref={productsRef}>Products</ScrollTo>
+            <span>About Us</span>
           </div>
         </div>
-        <div></div>
       </div>
     </>
   );
