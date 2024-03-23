@@ -8,9 +8,10 @@
 
 .ain-footer-location {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
   gap: 20px;
 }
@@ -21,6 +22,8 @@
 
 .ain-footer-location__map .map_frame {
   width: 100%;
+  min-width: 350px;
+  min-height: 250px;
   height: 100%;
   border-radius: 20px;
 }
@@ -82,4 +85,10 @@
 
 .ain-footer-links-redirects  .nav-item{
   height: fit-content;
+}
+
+@media screen and (max-width: 700px) {
+  .ain-footer-location {
+    justify-content: center;
+  }
 }

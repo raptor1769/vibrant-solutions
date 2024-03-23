@@ -1,13 +1,10 @@
-// App.js
 import { useRef } from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Preview from "./components/Preview/Preview";
-import Products from "./components/Products/Products";
-import ServiceAndTech from "./components/ServicesAndTechs/ServiceAndTech";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import ProjectDescription from "./components/ProductDescription/ProjectDescription";
+import Home from "./pages/Home";
 
 const App = () => {
   const servicesRef = useRef(null);
@@ -16,16 +13,13 @@ const App = () => {
   const ProjectDescriptionRef = useRef(null);
   return (
     <div className="App">
-      <Router>
-        <Header servicesRef={servicesRef} productsRef={productsRef} />
-        <Preview ref={headerRef}/>
-        <ServiceAndTech ref={servicesRef} />
+      <Header servicesRef={servicesRef} productsRef={productsRef} />
+      <Router basename="/vibrant-solutions">
         <Routes>
-          <Route path="/" element={<Products ref={productsRef} ProjectDescriptionRef={ProjectDescriptionRef}/>} />
+          <Route path="/"  element={<Home />} />
           <Route path="/products/:productId" element={<ProjectDescription ref={ProjectDescriptionRef}/>} />
-          <Route path="/vibrant-solutions" element={<Products ref={productsRef} ProjectDescriptionRef={ProjectDescriptionRef}/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-
         <Footer servicesRef={servicesRef} productsRef={productsRef}  headerRef={headerRef}/>
       </Router>
     </div>

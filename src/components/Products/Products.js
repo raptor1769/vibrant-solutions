@@ -3,7 +3,6 @@ import products from "../../assets/staticData/products.json";
 import Card from "../common/Card/Card";
 import { forwardRef } from "react";
 import { Link } from "react-router-dom";
-import ScrollTo from "../common/ScrollTo/ScrollTo";
 
 const Products = forwardRef((props, ref) => {
   return (
