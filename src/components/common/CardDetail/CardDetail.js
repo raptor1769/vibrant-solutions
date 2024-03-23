@@ -1,16 +1,12 @@
-const CardDetail = ({ title, color,type, description, series, KeyFeatures,CustomizationOptions,Extras,Future }) => {
-  const servicesStyle = {
-    backgroundColor: `#${color}`,
-    width: "61px",
-  };
-  const productStyle = {};
+const CardDetail = ({ title,type, description, series, KeyFeatures,CustomizationOptions,Extras,Future }) => {
+
   return (
     <div className={`card-container ${type}-card`}>
       <div className="details">
           <div>
             <h2>{title}</h2>
             <p>{description}</p>
-            <img src="" alt="image"/>
+            {/* <img src="" alt="image"/> */}
             {series.map((item, key) => {
               return (
                 <div key={key}>

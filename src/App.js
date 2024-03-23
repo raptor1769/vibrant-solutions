@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Header servicesRef={servicesRef} productsRef={productsRef} />
-      <Router basename="/vibrant-solutions">
+      <Router>
         <Routes>
           <Route path="/"  element={<Home />} />
           <Route path="/products/:productId" element={<ProjectDescription ref={ProjectDescriptionRef}/>} />
