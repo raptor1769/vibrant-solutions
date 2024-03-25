@@ -1,6 +1,7 @@
 import "./CardDetail.css"
 import Cube1 from "../../../assets/images/Cube4.png"
-import Cube2 from "../../../assets/images/Cube8.png"
+import Cube2 from "../../../assets/images/Cube8.png";
+import { Link } from "react-router-dom";
 
 const CardDetail = ({ title,type, description, series, KeyFeatures,CustomizationOptions,Extras,Future }) => {
 
@@ -91,7 +92,9 @@ const CardDetail = ({ title,type, description, series, KeyFeatures,Customization
           </div>
         </div>
         <div className="card-button">
-        <button>Back to Homepage</button>
+        <Link to={`/`} className="Links">
+          <button>Back to Homepage</button>
+        </Link>
       </div>
       </div>
     </div>
