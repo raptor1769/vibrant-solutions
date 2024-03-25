@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Sales & Rental",
+    "desc": "We Offer A Wide Range Of Laptops, Desktops, Servers, Switches, Software Licences And So OnFrom Reliable Manufacturers and Providers Such as Dell, HP, Lenovo, Microsoft, etc.",
+    "img": "./assets/images/PriceTag.png",
+    "color": "0343FF"
+  },
+  {
+    "id": 2,
+    "title": "Support Services",
+    "desc": "Our Support Services Include Installations, Maintenance, Repair and AMC'sWe Ensure That Our Clients Receive The Technical Support They Need To Stay Productive",
+    "img": "./assets/images/Services.png",
+    "color": "1293FE"
+  },
+  {
+    "id": 3,
+    "title": "Cloud Services",
+    "desc": "We Provide Cloud Services Such As Public cloud, Private cloud, Hybrid cloud, Virtual Machines, Dedicated servers, Cloud Storage and Managed services",
+    "img": "./assets/images/UploadCloud.png",
+    "color": "20DFFD"
+  }
+]
