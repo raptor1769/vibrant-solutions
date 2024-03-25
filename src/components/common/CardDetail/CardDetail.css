@@ -1,0 +1,109 @@
+.img-resize{
+    width:70%;
+    height:500px;
+}
+.heading-title h1{
+    font-size: 70px;
+    color:blue;
+}
+.heading-title h3{
+    font-size: 30px;
+    color:blue;
+}
+.heading-title p{
+    margin-left: 140px;
+    margin-right: 140px;
+    font-size: 20px;
+}
+.heading-title b,p{
+    display: block;
+    text-align: left;
+    line-height: 1.8;
+}
+.card-button{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.card-button button{
+    background: rgb(4,96,250);
+    background: linear-gradient(90deg, rgba(4,96,250,1) 0%, rgba(0,212,255,0.5971638655462185) 100%);
+    color:white;
+    border:none;
+    border-radius: 30px;
+    height:60px;
+    width:230px;
+    font-size: 20px;
+    margin-top: 10%;
+}
+.card-detail-mesh-cube-3{
+    position: absolute;
+    object-fit: cover;
+    width: 10%;
+    top: 234px;
+    left: -70px;
+}
+.card-detail-mesh-cube-1{
+    position: absolute;
+    width: 20%;
+    max-width: 240px;
+    top: 10%;
+    right: -100px;
+    transform: translateY(-10%);
+}
+@media screen and (max-width: 400px) {
+    .img-resize{
+        width: 100%;
+        height: 270px;
+    }
+    .heading-title{
+        margin: auto;
+    }
+    .heading-title h1{
+        font-size: 45px;
+        color:blue;
+    }
+    .heading-title h3{
+        font-size: 18px;
+        color:blue;
+    }
+    .heading-title p{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .heading-title .text-d-p-description{
+        margin-left: 50px;
+        margin-right: 0px;
+        font-size: 10px;
+        text-align: left;
+    }
+    .text-p-description{
+        margin-left: 50px!important;
+        margin-right: 45px!important;
+        font-size: 10px;
+        text-align: left!important;
+    }
+    .heading-title .large-text{
+        font-size:45px
+    }
+    .heading-title .larger-text{
+        font-size: 45px;
+    }
+    .card-detail-mesh-cube-3{
+        position: absolute;
+        object-fit: cover;
+        width: 20%;
+        top: 234px;
+        left: -14px;
+    }
+    .card-detail-mesh-cube-1{
+        position: absolute;
+        width: 20%;
+        max-width: 240px;
+        top: 10%;
+        right: 0px;
+        transform: translateY(-10%);
+    }
+}
