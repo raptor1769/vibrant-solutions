@@ -79,15 +79,31 @@
     "series": [
       {
         "name": "[Product Name 1]:",
-        "desc": "Streamlined Performance Unleash the power of productivity with our [Product Name 1]. Engineered for speed and efficiency, this desktop boasts high-performance processors, ample storage options, and advanced graphics capabilities. From demanding tasks to multimedia creation, it's your reliable companion for all computing needs."
+        "desc": [
+          {
+            "title":"Streamlined Performance",
+            "desc":"Unleash the power of productivity with our [Product Name 1]. Engineered for speed and efficiency, this desktop boasts high-performance processors, ample storage options, and advanced graphics capabilities. From demanding tasks to multimedia creation, it's your reliable companion for all computing needs."
+          }
+        ]
+        
       },
       {
         "name": "[Product Name 2]:",
-        "desc": "Compact Elegance Experience the perfect blend of form and function with our [Product Name 2]. Its sleek design doesn't compromise on performance, making it ideal for space-conscious users who seek a stylish desktop without compromising on computing power."
+        "desc": [
+          {
+            "title":"Compact Elegance",
+            "desc":"Experience the perfect blend of form and function with our [Product Name 2]. Its sleek design doesn't compromise on performance, making it ideal for space-conscious users who seek a stylish desktop without compromising on computing power."
+          }
+        ]
       },
       {
         "name": "[Product Name 3]:",
-        "desc": "Creative Expression Redefined: Immerse yourself in a world of creativity with our [Series Name] laptops. Equipped with vibrant displays, powerful graphics, and advanced editing capabilities, these laptops empower content creators to bring their visions to life."
+        "desc": [
+          {
+            "title":"Creative Expression Redefined",
+            "desc":"Immerse yourself in a world of creativity with our [Series Name] laptops. Equipped with vibrant displays, powerful graphics, and advanced editing capabilities, these laptops empower content creators to bring their visions to life."
+          }
+        ]
       }
     ],
     "KeyFeatures":[
@@ -137,15 +153,30 @@
     "series": [
       {
         "name": "[Product Name 1]:",
-        "desc": "High-Speed Wireless Routers Elevate your connectivity with our [Product Name 1]. Equipped with cutting-edge wireless technology, it delivers lightning-fast internet speeds and ensures a stable connection for all your devices. Say goodbye to dead zones and experience seamless connectivity throughout your space."
+        "desc": [
+          {
+            "title":"High-Speed Wireless Routers",
+            "desc":"Elevate your connectivity with our [Product Name 1]. Equipped with cutting-edge wireless technology, it delivers lightning-fast internet speeds and ensures a stable connection for all your devices. Say goodbye to dead zones and experience seamless connectivity throughout your space."
+          }
+        ]
       },
       {
         "name": "[Product Name 2]:",
-        "desc": "Enterprise-Grade Switches Enhance the efficiency of your network with our [Product Name 2]. Designed for scalability and performance, these switches are perfect for businesses of all sizes. Enjoy fast and reliable data transfer, efficient network management, and seamless communication between devices."
+        "desc": [
+          {
+            "title":"Enterprise-Grade Switches",
+            "desc":"Enhance the efficiency of your network with our [Product Name 2]. Designed for scalability and performance, these switches are perfect for businesses of all sizes. Enjoy fast and reliable data transfer, efficient network management, and seamless communication between devices."
+          }
+        ] 
       },
       {
         "name": "[Product Name 3]:",
-        "desc": "Secure VPN Firewalls Prioritize the security of your network with our [Product Name 3]. Our VPN firewalls provide robust protection against cyber threats, ensuring the confidentiality and integrity of your data. Create a secure and reliable virtual private network for your organization."
+        "desc": [
+          {
+            "title":"Secure VPN Firewalls",
+            "desc":"Prioritize the security of your network with our [Product Name 3]. Our VPN firewalls provide robust protection against cyber threats, ensuring the confidentiality and integrity of your data. Create a secure and reliable virtual private network for your organization."
+          }
+        ] 
       }
     ],
     "KeyFeatures":[
@@ -195,15 +226,30 @@
     "series": [
       {
         "name": "[Product Name 1]:",
-        "desc": "owerhouse Rack Servers Experience unparalleled performance with our [Product Name 1] rack servers. Designed for data-intensive tasks, these servers are ideal for businesses that demand high computing power, scalability, and efficient data management. Maximize your efficiency with a server built to handle the most demanding workloads."
+        "desc":[
+          {
+            "title":"Owerhouse Rack Servers",
+            "desc":"Experience unparalleled performance with our [Product Name 1] rack servers. Designed for data-intensive tasks, these servers are ideal for businesses that demand high computing power, scalability, and efficient data management. Maximize your efficiency with a server built to handle the most demanding workloads."
+          }
+        ] 
       },
       {
         "name": "[Product Name 2]:",
-        "desc": "Compact Tower Servers Our [Product Name 2] tower servers offer a space-saving solution without compromising on performance. Perfect for small to medium-sized businesses, these servers provide a reliable and cost-effective platform for essential business applications, file sharing, and collaboration."
+        "desc": [
+          {
+            "title":"Compact Tower Servers",
+            "desc":"Our [Product Name 2] tower servers offer a space-saving solution without compromising on performance. Perfect for small to medium-sized businesses, these servers provide a reliable and cost-effective platform for essential business applications, file sharing, and collaboration."
+          }
+        ]
       },
       {
         "name": "[Product Name 3]:",
-        "desc": "Scalable Blade Servers Embrace the future of server technology with our [Product Name 3] blade servers. Designed for maximum density and efficiency, these servers are a powerhouse in a compact form factor. Achieve unparalleled scalability, easy maintenance, and streamlined data centre management with our blade server solutions."
+        "desc": [
+          {
+            "title":"Scalable Blade Servers",
+            "desc":"Embrace the future of server technology with our [Product Name 3] blade servers. Designed for maximum density and efficiency, these servers are a powerhouse in a compact form factor. Achieve unparalleled scalability, easy maintenance, and streamlined data centre management with our blade server solutions."
+          }
+        ]
       }
     ],
     "KeyFeatures":[
@@ -253,15 +299,30 @@
     "series": [
       {
         "name": "[Product Name 1]:",
-        "desc": "High-Speed Laser Printers Transform your printing experience with our [Printer Model 1] laser printers. Offering exceptional speed and print quality, these printers are ideal for businesses with high-volume printing needs. Produce professional documents with clarity and efficiency."
+        "desc": [
+          {
+            "title":"High-Speed Laser Printers",
+            "desc":"Transform your printing experience with our [Printer Model 1] laser printers. Offering exceptional speed and print quality, these printers are ideal for businesses with high-volume printing needs. Produce professional documents with clarity and efficiency."
+          }
+        ] 
       },
       {
         "name": "[Product Name 2]:",
-        "desc": "All-in-One Inkjet Printers Our [Printer Model 2] all-in-one inkjet printers are versatile workhorses, combining printing, scanning, and copying functionalities in a single device. Enjoy vibrant color printing and efficient document handling in a compact and user-friendly design."
+        "desc": [
+          {
+            "title":"All-in-One Inkjet Printers",
+            "desc":"Our [Printer Model 2] all-in-one inkjet printers are versatile workhorses, combining printing, scanning, and copying functionalities in a single device. Enjoy vibrant color printing and efficient document handling in a compact and user-friendly design."
+          }
+        ]  
       },
       {
         "name": "[Product Name 3]:",
-        "desc": "High-Resolution Flatbed Scanners Digitize your documents with precision using our [Scanner Model 1] flatbed scanners. With high-resolution scanning capabilities, these scanners are perfect for capturing detailed images and converting physical documents into digital formats."
+        "desc":[
+          {
+            "title":"High-Resolution Flatbed Scanners",
+            "desc":"Digitize your documents with precision using our [Scanner Model 1] flatbed scanners. With high-resolution scanning capabilities, these scanners are perfect for capturing detailed images and converting physical documents into digital formats."
+          }
+        ] 
       }
     ],
     "KeyFeatures":[
@@ -310,20 +371,40 @@
     "description": "Unlock Infinite Possibilities with Vibrant IT Solution Cloud Services: Revolutionizing Your Digital Landscape.In the era of digital transformation, harnessing the power of the cloud is fundamental to staying agile and competitive. At Vibrant IT Solution, our Cloud Services are meticulously designed to offer scalable, secure, and innovative solutions, empowering your business to thrive in the dynamic digital landscape.",
     "series": [
       {
-        "name": "Cloud Infrastructure as a Service (IaaS)",
-        "desc": " Elevate your business with our Cloud Infrastructure services, providing on-demand computing resources tailored to your specific needs. Scale your infrastructure effortlessly, whether you require robust computing power, storage, or networking solutions."
+        "name": "",
+        "desc": [
+          {
+            "title":"Cloud Infrastructure as a Service (IaaS)",
+            "desc":"Elevate your business with our Cloud Infrastructure services, providing on-demand computing resources tailored to your specific needs. Scale your infrastructure effortlessly, whether you require robust computing power, storage, or networking solutions."
+          }
+        ]
       },
       {
-        "name": "Platform as a Service (PaaS)",
-        "desc": "Simplify your application development and deployment with our Platform as a Service offerings. Focus on innovation while we manage the underlying infrastructure, allowing you to accelerate your development cycle and bring applications to market faster."
+        "name": "",
+        "desc": [
+          {
+            "title":"Platform as a Service (PaaS)",
+            "desc":"Simplify your application development and deployment with our Platform as a Service offerings. Focus on innovation while we manage the underlying infrastructure, allowing you to accelerate your development cycle and bring applications to market faster."
+          }
+        ] 
       },
       {
-        "name": "Software as a Service (SaaS)",
-        "desc": "Explore our Software as a Service solutions, delivering powerful business applications directly to your team without the need for installation or maintenance. Enhance collaboration, productivity, and efficiency with our suite of cloud-based software offerings."
+        "name": "",
+        "desc":[
+          {
+            "title":"Software as a Service (SaaS)",
+            "desc":"Explore our Software as a Service solutions, delivering powerful business applications directly to your team without the need for installation or maintenance. Enhance collaboration, productivity, and efficiency with our suite of cloud-based software offerings."
+          }
+        ]  
       },
       {
-        "name": "Cloud Migration and Consulting",
-        "desc": "ENavigate your journey to the cloud seamlessly with our expert cloud migration services. Our consultants provide strategic guidance, ensuring a smooth transition and maximizing the benefits of cloud adoption for your organization."
+        "name": "",
+        "desc": [
+          {
+            "title":"Cloud Migration and Consulting",
+            "desc":"ENavigate your journey to the cloud seamlessly with our expert cloud migration services. Our consultants provide strategic guidance, ensuring a smooth transition and maximizing the benefits of cloud adoption for your organization."
+          }
+        ]
       }
     ],
     "KeyFeatures":[

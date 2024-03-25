@@ -13,7 +13,7 @@ const App = () => {
   const productsRef = useRef(null);
   const headerRef = useRef(null);
   const ProjectDescriptionRef = useRef(null);
-  const product = productsDesciption[0];
+  const product = productsDesciption[5];
   return (
     <div className="App">
       <Header servicesRef={servicesRef} productsRef={productsRef} />
