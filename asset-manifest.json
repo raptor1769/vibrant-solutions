@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibrant-solutions/static/css/main.c45c22f8.css",
-    "main.js": "/vibrant-solutions/static/js/main.9ca3001b.js",
+    "main.js": "/vibrant-solutions/static/js/main.3482e200.js",
     "static/media/logo.png": "/vibrant-solutions/static/media/logo.7e3285ed9406c2c4dbd4.png",
     "static/media/Cube4.png": "/vibrant-solutions/static/media/Cube4.4991e144f1536e000559.png",
     "static/media/Laptop.svg": "/vibrant-solutions/static/media/Laptop.acc806f6d57f2de8c9ea1a3e2d86fe23.svg",
@@ -10,10 +10,10 @@
     "static/media/phone.svg": "/vibrant-solutions/static/media/phone.3742a324266cd8a4ca6a27f349b9b9ef.svg",
     "static/media/envelope.svg": "/vibrant-solutions/static/media/envelope.0c0519dc43c0fc6eb708c48766d6a15b.svg",
     "main.c45c22f8.css.map": "/vibrant-solutions/static/css/main.c45c22f8.css.map",
-    "main.9ca3001b.js.map": "/vibrant-solutions/static/js/main.9ca3001b.js.map"
+    "main.3482e200.js.map": "/vibrant-solutions/static/js/main.3482e200.js.map"
   },
   "entrypoints": [
     "static/css/main.c45c22f8.css",
-    "static/js/main.9ca3001b.js"
+    "static/js/main.3482e200.js"
   ]
 }
