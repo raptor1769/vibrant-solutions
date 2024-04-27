@@ -25,7 +25,7 @@ const CardDetail = ({ title,type, description, series, KeyFeatures,Customization
           <p>{description}</p>
           {/* <img src="" alt="image"/> */}
 
-          <div className="heading-title">
+          {/* <div className="heading-title">
             <h1>Series</h1>
             {series.map((item, key) => {
               return (
@@ -42,7 +42,7 @@ const CardDetail = ({ title,type, description, series, KeyFeatures,Customization
                 </div>
               );
             })}
-          </div>
+          </div> */}
           <div className="heading-title">
             <h1>Key Features</h1>
             {KeyFeatures.map((item, key) => {

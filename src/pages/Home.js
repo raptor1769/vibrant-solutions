@@ -3,17 +3,13 @@ import Preview from "../components/Preview/Preview";
 import ServiceAndTech from "../components/ServicesAndTechs/ServiceAndTech";
 import Products from "../components/Products/Products";
 
-const Home = () => {
-  const servicesRef = useRef(null);
-  const productsRef = useRef(null);
-  const headerRef = useRef(null);
-  const ProjectDescriptionRef = useRef(null);
+const Home = ({servicesRef, productsRef}) => {
 
 	return (
 		<>
-			<Preview ref={headerRef} />
+			<Preview />
 			<ServiceAndTech ref={servicesRef} />
-      <Products ref={productsRef} ProjectDescriptionRef={ProjectDescriptionRef}/>
+      <Products ref={productsRef} />
 		</>
 	);
 };

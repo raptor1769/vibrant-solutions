@@ -24,11 +24,15 @@ const Footer = ({ servicesRef, productsRef }) => {
             <div className="get-in-touch">Get in Touch!</div>
             <div className="contact-info">
               <div className="bootstrap-icon"><img alt="phone-img" src={phone}></img></div>
-              <div className="bootstrap-content">+91-1234567890</div>
+              <div className="bootstrap-content">+91-8919090172</div>
             </div>
             <div className="contact-info">
               <div className="bootstrap-icon"><img alt="email-img" src={email}></img></div>
-              <div className="bootstrap-content">demo@aintech.com</div>
+              <div 
+                className="bootstrap-content email-link"
+                onClick={() => window.open(`mailto: info@vibrantitsolutions.in`, "_blank")}>
+                  info@vibrantitsolutions.in
+                </div>
             </div>
           </div>
         </div>

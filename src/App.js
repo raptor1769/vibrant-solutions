@@ -9,18 +9,17 @@ import Home from "./pages/Home";
 const App = () => {
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
-  const headerRef = useRef(null);
-  const ProjectDescriptionRef = useRef(null);
+
   return (
     <div className="App">
       <Header servicesRef={servicesRef} productsRef={productsRef} />
       <Router>
         <Routes>
-          <Route path="/"  element={<Home />} />
-          <Route path="/products/:productId" element={<ProjectDescription ref={ProjectDescriptionRef}/>} />
+          <Route path="/"  element={<Home servicesRef={servicesRef} productsRef={productsRef} />} />
+          <Route path="/products/:productId" element={<ProjectDescription />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Footer servicesRef={servicesRef} productsRef={productsRef}  headerRef={headerRef}/>
+        <Footer servicesRef={servicesRef} productsRef={productsRef} />
       </Router>
     </div>
   );

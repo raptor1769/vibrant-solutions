@@ -87,6 +87,15 @@
   height: fit-content;
 }
 
+.email-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 700px) {
   .ain-footer-location {
     justify-content: center;
