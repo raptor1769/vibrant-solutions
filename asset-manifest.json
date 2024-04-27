@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vibrant-solutions/static/css/main.c45c22f8.css",
-    "main.js": "/vibrant-solutions/static/js/main.132a8c83.js",
+    "main.css": "/vibrant-solutions/static/css/main.4ced500d.css",
+    "main.js": "/vibrant-solutions/static/js/main.df01e104.js",
     "static/media/logo.png": "/vibrant-solutions/static/media/logo.7e3285ed9406c2c4dbd4.png",
     "static/media/Cube4.png": "/vibrant-solutions/static/media/Cube4.4991e144f1536e000559.png",
-    "static/media/Laptop.svg": "/vibrant-solutions/static/media/Laptop.acc806f6d57f2de8c9ea1a3e2d86fe23.svg",
+    "static/media/Laptop.svg": "/vibrant-solutions/static/media/Laptop.37858c26ebbb57f0d9a98ba4cf098f72.svg",
     "static/media/Cube8.png": "/vibrant-solutions/static/media/Cube8.833018a3ebec451158f7.png",
     "index.html": "/vibrant-solutions/index.html",
     "static/media/phone.svg": "/vibrant-solutions/static/media/phone.3742a324266cd8a4ca6a27f349b9b9ef.svg",
     "static/media/envelope.svg": "/vibrant-solutions/static/media/envelope.0c0519dc43c0fc6eb708c48766d6a15b.svg",
-    "main.c45c22f8.css.map": "/vibrant-solutions/static/css/main.c45c22f8.css.map",
-    "main.132a8c83.js.map": "/vibrant-solutions/static/js/main.132a8c83.js.map"
+    "main.4ced500d.css.map": "/vibrant-solutions/static/css/main.4ced500d.css.map",
+    "main.df01e104.js.map": "/vibrant-solutions/static/js/main.df01e104.js.map"
   },
   "entrypoints": [
-    "static/css/main.c45c22f8.css",
-    "static/js/main.132a8c83.js"
+    "static/css/main.4ced500d.css",
+    "static/js/main.df01e104.js"
   ]
 }
