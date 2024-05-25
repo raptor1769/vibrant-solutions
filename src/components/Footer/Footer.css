@@ -101,3 +101,18 @@
     justify-content: center;
   }
 }
+.social-media-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-left: 40%;
+}
+
+.social-media-icon {
+  margin: 0 10px;
+}
+
+.social-media-icon img {
+  width: 30px;
+  height: auto;
+}

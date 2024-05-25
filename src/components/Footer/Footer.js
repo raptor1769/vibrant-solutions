@@ -2,6 +2,12 @@ import "./Footer.css";
 import phone from "../../assets/images/phone.svg";
 import email from "../../assets/images/envelope.svg";
 import Logo from "../../assets/images/logo.png";
+import facebook from "../../assets/images/fb.png";
+import twitter from "../../assets/images/x.png";
+import linkedin from "../../assets/images/linkedin.jpg";
+import youtube from "../../assets/images/youtube.png";
+import pinterest from "../../assets/images/pinterest.png";
+import instagram from "../../assets/images/instagram.jpg";
 import ScrollTo from "../common/ScrollTo/ScrollTo";
 const Footer = ({ servicesRef, productsRef }) => {
   return (
@@ -34,6 +40,38 @@ const Footer = ({ servicesRef, productsRef }) => {
                   info@vibrantitsolutions.in
                 </div>
             </div>
+          </div>
+        </div>
+        <div className="social-media-section">
+          <div className="social-media-icon">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="Facebook" />
+            </a>
+          </div>
+          <div className="social-media-icon">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <img src={twitter} alt="Twitter" />
+            </a>
+          </div>
+          <div className="social-media-icon">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedin} alt="LinkedIn" />
+            </a>
+          </div>
+          <div className="social-media-icon">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              <img src={youtube} alt="YouTube" />
+            </a>
+          </div>
+          <div className="social-media-icon">
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+              <img src={pinterest} alt="Pinterest" />
+            </a>
+          </div>
+          <div className="social-media-icon">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="Instagram" />
+            </a>
           </div>
         </div>
         <div className="ain-footer-links">
