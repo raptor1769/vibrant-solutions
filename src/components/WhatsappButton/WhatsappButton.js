@@ -6,7 +6,7 @@ import './WhatsAppButton.css'; // Import CSS file for styling
 function WhatsAppButton() {
   return (
     <div className="whatsapp-button">
-      <a href="https://wa.me/8919090172" target="_blank">
+      <a href="https://wa.me/+918885016250" target="_blank">
         <img src={whatsappLogo} alt="WhatsApp" />
       </a>
     </div>

@@ -11,7 +11,7 @@ const Home = ({servicesRef, productsRef}) => {
 	return (
 		<>
 			<SlideShow />
-			<Preview />
+			{/* <Preview /> */}
 			<ServiceAndTech ref={servicesRef} />
       <Products ref={productsRef} />
 	  <PartnerLogo/>

@@ -50,11 +50,11 @@ function SlideShow() {
       <Carousel.Item>
         <img
           src={car4}
-          alt="Third slide"
+          alt="Fourth slide"
           className='carousel-item d-block w-100'
         />
         <Carousel.Caption>
-          <h1>Third slide label</h1>
+          <h1>Fourth slide label</h1>
           <p className='ml-7'>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -63,11 +63,11 @@ function SlideShow() {
       <Carousel.Item>
         <img
           src={car5}
-          alt="Third slide"
+          alt="Fifth slide"
           className='carousel-item d-block w-100'
         />
         <Carousel.Caption>
-          <h1>Third slide label</h1>
+          <h1>Fifth slide label</h1>
           <p className='ml-7'>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -76,11 +76,11 @@ function SlideShow() {
       <Carousel.Item>
         <img
           src={car6}
-          alt="Third slide"
+          alt="Sixth slide"
           className='carousel-item d-block w-100'
         />
         <Carousel.Caption>
-          <h1>Third slide label</h1>
+          <h1>Sixth slide label</h1>
           <p className='ml-7'>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>

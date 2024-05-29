@@ -1,13 +1,20 @@
-import "./CardDetail.css"
-import Cube1 from "../../../assets/images/Cube4.png"
+import "./ServiceCardDetails.css";
+import Cube1 from "../../../assets/images/Cube4.png";
 import Cube2 from "../../../assets/images/Cube8.png";
 import { Link } from "react-router-dom";
 
-const CardDetail = ({ title,type, description, series, KeyFeatures,CustomizationOptions,Extras,Future }) => {
-
+const ServiceCardDetails = ({
+  title,
+  type,
+  description,
+  Installation,
+  Extras,
+  getInTouch,
+  services
+}) => {
   return (
     <div className={`card-container ${type}-card`}>
-            <div className="preview-mesh">
+      <div className="preview-mesh">
         {/* <img className="mesh-bg" src={BgImg} alt="bg-mesh" /> */}
         <img className="card-detail-mesh-cube-1" src={Cube1} alt="bg-mesh" />
         {/* <img className="mesh-cube-2 preview-images" src={Cube1} alt="bg-mesh" /> */}
@@ -43,62 +50,65 @@ const CardDetail = ({ title,type, description, series, KeyFeatures,Customization
               );
             })}
           </div> */}
-          <div className="heading-title">
-            <h1>Key Features</h1>
-            {KeyFeatures?.map((item, key) => {
+          {Installation && (
+            <div className="heading-title">
+              <h1>Installation</h1>
+              <p>{Installation}</p>
+            </div>
+          )}
+          {
+            services && (
+              <div className="heading-title">
+             <h1 className="large-text">Services</h1>
+              {services?.map((item, key) => {
               return (
                 <div key={key}>
-                  <p >
+                  <p>
                     <b>
-                    <h3>{item.name}</h3>
+                      <h3>{item.name}</h3>
                     </b>
-                  
-                  <p className="text-d-p-description">{item.desc}</p>
+
+                    <p className="text-p-description">{item.desc}</p>
                   </p>
-                  
                 </div>
               );
             })}
-          </div>
+            </div>
+            )
+          }
+          {Extras &&(
           <div className="heading-title">
-            <h1 className="large-text">Customization Options</h1>
-            <p>{CustomizationOptions}</p>
+            <h1 className="large-text">Why Choose Us</h1>
             {Extras?.map((item, key) => {
               return (
                 <div key={key}>
                   <p>
                     <b>
-                    <h3>{item.name}</h3>
+                      <h3>{item.name}</h3>
                     </b>
-                  
-                  <p className="text-p-description">{item.desc}</p>
+
+                    <p className="text-p-description">{item.desc}</p>
                   </p>
-                  
                 </div>
               );
             })}
           </div>
+          ) }
           <div className="heading-title">
-          {Future?.map((item, key) => {
-            return (
-              <div key={key}>
-                    <h1 className="larger-text">{item.name}</h1>
-                  
-                  <p>{item.desc}</p>
-                  
-              </div>
-            );
-          })}
+            <h1>Get In Touch With Us</h1>
+            <p>{getInTouch}</p>
           </div>
+          
         </div>
+         
         <div className="card-button">
-        <Link to={`/`} className="Links">
-          <button>Back to Homepage</button>
-        </Link>
-      </div>
+          <Link to={`/`} className="Links">
+            <button>Back to Homepage</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
 };
 
-export default CardDetail;
+export default ServiceCardDetails;

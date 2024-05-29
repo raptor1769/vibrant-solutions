@@ -9,7 +9,7 @@ const ProjectDescription = forwardRef(() => {
 	const product = productsDesciption.find(
 		(product) => product.id === parseInt(productId, 10)
 	);
-
+	
 	return product ? (
 		<CardDetail
 			title={product.name}
