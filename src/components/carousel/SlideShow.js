@@ -2,9 +2,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import car1 from '../../assets/images/car1.jpg'
 import car2 from '../../assets/images/car2.jpg'
 import car3 from '../../assets/images/car3.jpg'
-import car4 from '../../assets/images/car4.jpg'
 import car5 from '../../assets/images/car5.jpg'
-import car6 from '../../assets/images/car6.jpg'
+import car6 from '../../assets/images/car6.jpeg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../carousel/SlideShow.css'
 
@@ -19,8 +18,8 @@ function SlideShow() {
           className='carousel-item d-block w-100'
         />
         <Carousel.Caption className='caption'>
-          <h1>First slide label</h1>
-          <p className='ml-7'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1>Desktops and Laptops</h1>
+          <p className='ml-7'>Empowering Your Digital Journey: Where Innovation Meets Reliability.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,9 +28,9 @@ function SlideShow() {
           alt="Second slide"
           className='carousel-item d-block w-100'
         />
-        <Carousel.Caption>
-          <h1>Second slide label</h1>
-          <p className='ml-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <Carousel.Caption className='caption'>
+          <h1>Servers</h1>
+          <p className='ml-7'>Robust, Scalable, and Secure: Your Ultimate Server Solutions.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -40,23 +39,10 @@ function SlideShow() {
           alt="Third slide"
           className='carousel-item d-block w-100'
         />
-        <Carousel.Caption>
-          <h1>Third slide label</h1>
+        <Carousel.Caption className='caption'>
+          <h1>Networking</h1>
           <p className='ml-7'>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          src={car4}
-          alt="Fourth slide"
-          className='carousel-item d-block w-100'
-        />
-        <Carousel.Caption>
-          <h1>Fourth slide label</h1>
-          <p className='ml-7'>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Connecting Computers Globally: Harnessing the Power of the Internet.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -66,10 +52,10 @@ function SlideShow() {
           alt="Fifth slide"
           className='carousel-item d-block w-100'
         />
-        <Carousel.Caption>
-          <h1>Fifth slide label</h1>
+        <Carousel.Caption className='caption'>
+          <h1>Security</h1>
           <p className='ml-7'>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Protecting Your Data: Simple, Strong Computer Security.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -79,10 +65,10 @@ function SlideShow() {
           alt="Sixth slide"
           className='carousel-item d-block w-100'
         />
-        <Carousel.Caption>
-          <h1>Sixth slide label</h1>
+        <Carousel.Caption className='caption'>
+          <h1>Printers</h1>
           <p className='ml-7'>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Efficient and Reliable: Your Office Printing Solution.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
