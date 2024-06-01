@@ -1,26 +1,65 @@
-.logo-carousel{
-    width: 100%;
-    height: 110px ;
-    margin-left: 10%;
-    margin-right: 10%;
+.logo-carousel {
+  width: 100%;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.logo-carousel-item{
-    background-color: white;
-    height: 90px ;
+
+.logo-carousel-item {
+  background-color: white;
+  height: 10rem;
 }
-.logo-carousel-img{
-    margin: 3rem 7.7rem 1rem 7rem; 
-     width: 40%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+
+.logo-carousel-img {
+  margin: 7rem;
+  margin-top: 13rem;
+  width: 50%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
-.logo-container{
-    margin-left: 6rem;
-    margin-right: 2rem;
-    display: flex;
-    justify-content: space-between;
+
+.logo-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-left: 14%;
 }
+
 .logo-carousel .carousel-control-prev-icon,
 .logo-carousel .carousel-control-next-icon {
   filter: invert(100%);
+}
+
+@media (max-width: 767px) {
+  .logo-carousel {
+    width: 100%;
+    height: 4rem;
+  }
+  .logo-carousel-img {
+    width: 27%;
+    margin: 0.5rem;
+  }
+  .logo-carousel-item {
+    background-color: white;
+    height: 4rem;
+  }
+
+  .logo-container {
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-right: auto;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 3rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    transform: scale(0.8);
+  }
 }

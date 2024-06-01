@@ -7,21 +7,21 @@
     "color": ""
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Networking Devices",
     "desc": "Networking Devices include Switches, Routers, Firewalls, Access Points, Hubs and more. Our Machines are Mainly sourced from reputed brands such as Cisco, Fortinet, Dell, Netgear, Dlink etc.",
     "img": "./assets/images/Product_2.png",
     "color": ""
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Servers",
     "desc": "Our Servers are sourced from the most valuable brands such as Dell, HP, Lenovo, IBM, Ngnix etc.We offer top-of-the-line servers that are designed to deliver superior performance, reliability, and security.",
     "img": "./assets/images/Product_3.png",
     "color": ""
   },
   {
-    "id": 4,
+    "id": 2,
     "title": "Desktop",
     "desc": "We Provide Desktops from top brands such as Dell, Lenovo, HP, Acer, Asus and Much more. Our range of desktops include Tower PCs, Compact PCs, Mini PCs and Gaming PCs. Our Desktop PCs are powered with required technology to make it perfect deal for our clients.",
     "img": "./assets/images/Product_4.png",

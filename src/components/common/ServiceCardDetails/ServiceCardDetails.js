@@ -1,17 +1,9 @@
-import "./ServiceCardDetails.css";
-import Cube1 from "../../../assets/images/Cube4.png";
-import Cube2 from "../../../assets/images/Cube8.png";
-import { Link } from "react-router-dom";
+import './ServiceCardDetails.css';
+import Cube1 from '../../../assets/images/Cube4.png';
+import Cube2 from '../../../assets/images/Cube8.png';
+import { Link } from 'react-router-dom';
 
-const ServiceCardDetails = ({
-  title,
-  type,
-  description,
-  Installation,
-  Extras,
-  getInTouch,
-  services
-}) => {
+const ServiceCardDetails = ({ title, type, description, Installation, Extras, getInTouch, services, img }) => {
   return (
     <div className={`card-container ${type}-card`}>
       <div className="preview-mesh">
@@ -21,11 +13,8 @@ const ServiceCardDetails = ({
         <img className="card-detail-mesh-cube-3" src={Cube2} alt="bg-mesh" />
       </div>
       <div className="details">
-        <div>
-          <img
-            className="img-resize"
-            src="https://media.wired.com/photos/5fd28eff5310f0846594ca81/master/w_1920%2Cc_limit/Gear-Lenovo-Ideapad-Flex-5.jpg"
-          />
+        <div className="card-image">
+          <img className="product-img-resize" src={img} />
         </div>
         <div className="heading-title">
           <h1>{title}</h1>
@@ -56,51 +45,48 @@ const ServiceCardDetails = ({
               <p>{Installation}</p>
             </div>
           )}
-          {
-            services && (
-              <div className="heading-title">
-             <h1 className="large-text">Services</h1>
+          {services && (
+            <div className="heading-title">
+              <h1 className="large-text">Services</h1>
               {services?.map((item, key) => {
-              return (
-                <div key={key}>
-                  <p>
-                    <b>
-                      <h3>{item.name}</h3>
-                    </b>
+                return (
+                  <div key={key}>
+                    <p>
+                      <b>
+                        <h3>{item.name}</h3>
+                      </b>
 
-                    <p className="text-p-description">{item.desc}</p>
-                  </p>
-                </div>
-              );
-            })}
+                      <p className="text-p-description">{item.desc}</p>
+                    </p>
+                  </div>
+                );
+              })}
             </div>
-            )
-          }
-          {Extras &&(
-          <div className="heading-title">
-            <h1 className="large-text">Why Choose Us</h1>
-            {Extras?.map((item, key) => {
-              return (
-                <div key={key}>
-                  <p>
-                    <b>
-                      <h3>{item.name}</h3>
-                    </b>
+          )}
+          {Extras && (
+            <div className="heading-title">
+              <h1 className="large-text">Why Choose Us</h1>
+              {Extras?.map((item, key) => {
+                return (
+                  <div key={key}>
+                    <p>
+                      <b>
+                        <h3>{item.name}</h3>
+                      </b>
 
-                    <p className="text-p-description">{item.desc}</p>
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-          ) }
+                      <p className="text-p-description">{item.desc}</p>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          )}
           <div className="heading-title">
             <h1>Get In Touch With Us</h1>
             <p>{getInTouch}</p>
           </div>
-          
         </div>
-         
+
         <div className="card-button">
           <Link to={`/`} className="Links">
             <button>Back to Homepage</button>

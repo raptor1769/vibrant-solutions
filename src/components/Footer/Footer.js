@@ -13,7 +13,7 @@ import Youtube from '../../assets/svgs/Youtube';
 import Phone from '../../assets/svgs/Phone';
 import Email from '../../assets/svgs/Email';
 
-const Footer = ({ servicesRef, productsRef }) => {
+const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
   return (
     <>
       <div className="ain-footer">
@@ -81,6 +81,7 @@ const Footer = ({ servicesRef, productsRef }) => {
           <div className="ain-footer-links-redirects">
             <ScrollTo ref={servicesRef}>Services</ScrollTo>
             <ScrollTo ref={productsRef}>Products</ScrollTo>
+            <ScrollTo ref={aboutUsRef}>About US</ScrollTo>
             {/* <span>About Us</span> */}
           </div>
         </div>
