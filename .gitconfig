@@ -1,0 +1,2 @@
+[alias]
+    amend = "!npx lint-staged && git commit --amend"

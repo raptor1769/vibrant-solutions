@@ -35,7 +35,7 @@
 
 .services-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-shrink: 0;
   width: 80%;
@@ -69,13 +69,7 @@
 }
 
 .services-footer__text {
-  background: linear-gradient(
-    90deg,
-    #ffffff 5%,
-    #20dffd 40%,
-    #ffffffa6 70%,
-    #ffffff 80%
-  );
+  background: linear-gradient(90deg, #ffffff 5%, #20dffd 40%, #ffffffa6 70%, #ffffff 80%);
   background-clip: text;
   width: 70%;
   -webkit-background-clip: text;
@@ -86,8 +80,5 @@
   margin: 16px auto;
 }
 
-
-
-@media only screen and (max-width:400px){
-  
+@media only screen and (max-width: 400px) {
 }
