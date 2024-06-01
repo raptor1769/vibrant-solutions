@@ -82,7 +82,7 @@
   height: fit-content;
 }
 
-.email-link {
+.email-link:hover {
   color: blue;
   text-decoration: underline;
 }
