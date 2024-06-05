@@ -7,7 +7,7 @@ import { AboutUs } from '../aboutUs/AboutUs';
 const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
   return (
     <div className="header-container">
-      <div className="logo-container">
+      <div className="header-logo-container">
         <img src={Logo} alt="logo" className="logo" />
       </div>
       <div className="nav-container">

@@ -15,7 +15,7 @@ const Home = ({ servicesRef, productsRef, aboutUsRef }) => {
       <ServiceAndTech ref={servicesRef} />
       <Products ref={productsRef} />
       <PartnerLogo />
-      <AboutUs ref={aboutUsRef} />
+      {/* <AboutUs ref={aboutUsRef} /> */}
       <WhatsAppButton />
     </>
   );

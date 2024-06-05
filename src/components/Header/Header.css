@@ -7,7 +7,7 @@
   margin-bottom: 2rem;
 }
 
-.logo-container {
+.header-logo-container {
   max-height: 64px;
   display: flex;
   justify-content: space-between;
@@ -70,7 +70,7 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .logo-container {
+  .header-logo-container {
     margin-left: 0;
     margin-bottom: 2rem;
   }

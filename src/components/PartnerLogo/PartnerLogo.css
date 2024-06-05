@@ -12,17 +12,22 @@
 
 .logo-carousel-img {
   margin: 7rem;
-  margin-top: 13rem;
+  margin-top: 12rem;
   width: 50%;
   aspect-ratio: 3/2;
   object-fit: contain;
+  margin-left: 13rem;
 }
 
 .logo-container {
   display: flex;
-  justify-content: space-evenly;
   gap: 1rem;
-  margin-left: 14%;
+  max-height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 220px;
+  margin-left: 32px;
+  margin-top: 0.5rem;
 }
 
 .logo-carousel .carousel-control-prev-icon,
@@ -36,7 +41,7 @@
     height: 4rem;
   }
   .logo-carousel-img {
-    width: 27%;
+    width: 25%;
     margin: 0.5rem;
   }
   .logo-carousel-item {

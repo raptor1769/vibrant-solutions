@@ -14,6 +14,11 @@ import Phone from '../../assets/svgs/Phone';
 import Email from '../../assets/svgs/Email';
 
 const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
+  const handleClick = (e) => {
+    if (e === 'youtube') window.location.href = 'https://www.youtube.com/channel/UC_vTbkS9h7aPrPpItHggQew';
+    else if (e === 'instagram') window.location.href = 'https://www.instagram.com/its_vits2024/';
+    else if (e === 'linkedIn') window.location.href = 'https://www.linkedin.com/company/its-vits/';
+  };
   return (
     <>
       <div className="ain-footer">
@@ -60,16 +65,16 @@ const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
               <Twitter width="32" height="32" className="twitter" />
             </div>
             <div className="social-media-icon">
-              <Linkedin width="32" height="32" className="linkedin" />
+              <Linkedin width="32" height="32" className="linkedin" onClick={() => handleClick('linkedIn')} />
             </div>
             <div className="social-media-icon">
-              <Youtube width="32" height="32" className="youtube" />
+              <Youtube width="32" height="32" className="youtube" onClick={() => handleClick('youtube')} />
             </div>
             <div className="social-media-icon">
               <Pinterest width="32" height="32" className="pinterest" />
             </div>
             <div className="social-media-icon">
-              <Instagram width="32" height="32" className="instagram" />
+              <Instagram width="32" height="32" className="instagram" onClick={() => handleClick('instagram')} />
             </div>
           </div>
         </div>
