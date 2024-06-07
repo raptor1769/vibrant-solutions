@@ -1,0 +1,110 @@
+.preview-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.preview-text {
+  width: 80%;
+  gap: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* line-height: 16px; */
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #0343ff;
+}
+.title-2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90.1deg,
+    #0038ff 67.64%,
+    #0038ff 67.64%,
+    #31eafe 89.78%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
+.title-3 {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.preview-mesh {
+  width: 100%;
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+  radial-gradient(75% 75% at 50% 50%, #00000000 1%, #073AFF00 36%, #FFFFFFFF 83%),
+  conic-gradient(from 190deg at 50% 50%, #03CEFF00 0%, #03CEFF 20%, #34B0FF 39%, #A995FF 68%, #6651C7A3 79%, #6651C700 82%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.preview-images {
+  position: absolute;
+  object-fit: cover;
+}
+
+.mesh-bg {
+  width: 100%;
+}
+
+.mesh-laptop {
+  width: 50%;
+  max-width: 500px;
+  transform: rotate(20deg);
+}
+
+.mesh-cube-1 {
+  position: absolute;
+  width: 20%;
+  max-width: 240px;
+  top: 10%;
+  right: 0;
+  transform: translateY(-10%);
+}
+
+.mesh-cube-2 {
+  position: absolute;
+  width: 15%;
+  max-width: 180px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-20%, 10%) scaleY(-1) rotate(180deg);
+}
+
+.mesh-cube-3 {
+  position: absolute;
+  width: 15%;
+  top: 0;
+  left: 0;
+  transform: translate(-5%, -10%) scaleY(-1) rotate(180deg);
+  /* transform: rotate(180deg); */
+}
+
+
+@media only screen and (max-width:400px) {
+
+}

@@ -1,0 +1,134 @@
+.card-image {
+  width: 100%;
+  height: 800px;
+}
+.product-img-resize {
+  width: 100%;
+  height: 800px;
+}
+.heading-title h1 {
+  font-size: 70px;
+  color: black;
+}
+.heading-title h3 {
+  font-size: 20px; /* Adjust font size */
+  color: black;
+}
+
+.heading-title p {
+  margin: 20px 0; /* Add margin for spacing */
+  font-size: 16px; /* Adjust font size */
+}
+
+.heading-title b,
+.heading-title p {
+  text-align: center; /* Center align the text */
+}
+
+.card-button {
+  margin-top: 20px; /* Add margin for spacing */
+  text-align: center; /* Center align the button */
+}
+.card-button button {
+  background: rgb(4, 96, 250);
+  background: linear-gradient(90deg, rgba(4, 96, 250, 1) 0%, rgba(0, 212, 255, 0.5971638655462185) 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  height: 60px;
+  width: 230px;
+  font-size: 20px;
+  margin-top: 10%;
+}
+.card-detail-mesh-cube-3 {
+  position: absolute;
+  object-fit: cover;
+  width: 10%;
+  top: 234px;
+  left: -70px;
+}
+.card-detail-mesh-cube-1 {
+  position: absolute;
+  width: 20%;
+  max-width: 240px;
+  top: 10%;
+  right: 0%;
+  transform: translateY(-10%);
+}
+.heading-title .text-d-p-description {
+  margin-left: 50px;
+  margin-right: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+.text-p-description {
+  margin-left: 50px;
+  margin-right: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .card-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .product-img-resize {
+    width: 100%;
+    height: 270px;
+  }
+
+  .heading-title {
+    margin-top: 1rem;
+    text-align: center; /* Center-align the text */
+  }
+
+  .heading-title h1 {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .heading-title h3 {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .heading-title p {
+    margin: 0; /* Reset margin */
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .heading-title .text-d-p-description {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .text-p-description {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-size: 10px;
+    text-align: left !important;
+  }
+
+  .heading-title .large-text {
+    font-size: 24px;
+  }
+
+  .heading-title .larger-text {
+    font-size: 24px;
+  }
+
+  .card-detail-mesh-cube-3 {
+    display: none;
+  }
+
+  .card-detail-mesh-cube-1 {
+    display: none;
+  }
+
+  .card-button {
+    margin-top: 20px;
+    text-align: center; /* Center-align the button */
+  }
+}

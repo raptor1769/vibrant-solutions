@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "CCTV Service and Installation",
+    "desc": "Ensure the safety and security of your property with our professional CCTV service and installation. Our expert team specializes in providing comprehensive surveillance solutions tailored to your specific needs.",
+    "img": "./assets/images/PriceTag.png",
+    "color": "0343FF"
+  },
+  {
+    "id": 2,
+    "title": "BIOMETRIC",
+    "desc": "Upgrade your security system with our professional biometric service and installation. Our expert team specializes in providing secure and convenient access control solutions using biometric technology.",
+    "img": "./assets/images/Services.png",
+    "color": "1293FE"
+  },
+  {
+    "id": 3,
+    "title": "Structured Cabling",
+    "desc": "Structured Cabling constitutes a set of network cables which are used to connect the plethora of network supported devices, in order to transfer the data and related information through switched, routers, data storage, IP phones and other network products.",
+    "img": "./assets/images/UploadCloud.png",
+    "color": "20DFFD"
+  },
+  {
+    "id": 4,
+    "title": "AMC",
+    "desc": "SAnnual Maintenance has always been the most prominent component of any enterprise as it always ensures the longevity of the systems, peripherals, networks and the servers in specific.",
+    "img": "./assets/images/UploadCloud.png",
+    "color": "20DFFD"
+  },
+  {
+    "id": 5,
+    "title": "Network Storage and Backup Solutions",
+    "desc": "We Provide Cloud Services Such As Public Cloud, Private Cloud, Hybrid Cloud, Virtual Machines, Dedicated Servers, Cloud Storage and Managed Services.",
+    "img": "./assets/images/Product_6.png",
+    "color": "0343FF"
+  }
+]
