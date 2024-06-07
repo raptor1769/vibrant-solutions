@@ -1,7 +1,6 @@
 {
   "name": "vibrant-solutions",
   "version": "0.1.0",
-  "homepage": " https://raptor1769.github.io/vibrant-solutions/",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
