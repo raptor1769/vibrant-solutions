@@ -6,12 +6,6 @@ import { Link } from 'react-router-dom';
 const CardDetail = ({ title, type, description, series, KeyFeatures, CustomizationOptions, Extras, Future, img }) => {
   return (
     <div className={`card-container ${type}-card`}>
-      <div className="preview-mesh">
-        {/* <img className="mesh-bg" src={BgImg} alt="bg-mesh" /> */}
-        <img className="card-detail-mesh-cube-1" src={Cube1} alt="bg-mesh" />
-        {/* <img className="mesh-cube-2 preview-images" src={Cube1} alt="bg-mesh" /> */}
-        <img className="card-detail-mesh-cube-3" src={Cube2} alt="bg-mesh" />
-      </div>
       <div className="details">
         <div className="card-image">
           <img className="product-img-resize" src={img} />
@@ -19,26 +13,6 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
         <div className="heading-title">
           <h1>{title}</h1>
           <p>{description}</p>
-          {/* <img src="" alt="image"/> */}
-
-          {/* <div className="heading-title">
-            <h1>Series</h1>
-            {series.map((item, key) => {
-              return (
-                <div key={key}>
-                  <p>
-                    <b>
-                      <h3>{item.name}</h3>
-                    </b>
-                    <p className="text-d-p-description">
-                      <b>{item.desc[0].title}</b>
-                      {item.desc[0].desc}
-                    </p>
-                  </p>
-                </div>
-              );
-            })}
-          </div> */}
           <div className="heading-title">
             <h1>Key Features</h1>
             {KeyFeatures?.map((item, key) => {

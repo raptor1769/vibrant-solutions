@@ -1,6 +1,4 @@
 import './Footer.css';
-import phone from '../../assets/images/phone.svg';
-import email from '../../assets/images/envelope.svg';
 import Logo from '../../assets/images/logo.png';
 import ScrollTo from '../common/ScrollTo/ScrollTo';
 
@@ -65,16 +63,21 @@ const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
               <Twitter width="32" height="32" className="twitter" />
             </div>
             <div className="social-media-icon">
-              <Linkedin width="32" height="32" className="linkedin" onClick={() => handleClick('linkedIn')} />
+              <Linkedin width="32" height="32" className="linkedin clickable" onClick={() => handleClick('linkedIn')} />
             </div>
             <div className="social-media-icon">
-              <Youtube width="32" height="32" className="youtube" onClick={() => handleClick('youtube')} />
+              <Youtube width="32" height="32" className="youtube clickable" onClick={() => handleClick('youtube')} />
             </div>
             <div className="social-media-icon">
               <Pinterest width="32" height="32" className="pinterest" />
             </div>
             <div className="social-media-icon">
-              <Instagram width="32" height="32" className="instagram" onClick={() => handleClick('instagram')} />
+              <Instagram
+                width="32"
+                height="32"
+                className="instagram clickable"
+                onClick={() => handleClick('instagram')}
+              />
             </div>
           </div>
         </div>
@@ -86,8 +89,7 @@ const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
           <div className="ain-footer-links-redirects">
             <ScrollTo ref={servicesRef}>Services</ScrollTo>
             <ScrollTo ref={productsRef}>Products</ScrollTo>
-            <ScrollTo ref={aboutUsRef}>About US</ScrollTo>
-            {/* <span>About Us</span> */}
+            {/* <ScrollTo ref={aboutUsRef}>About US</ScrollTo> */}
           </div>
         </div>
       </div>

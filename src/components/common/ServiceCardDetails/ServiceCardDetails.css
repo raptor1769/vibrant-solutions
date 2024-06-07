@@ -52,7 +52,7 @@
   width: 20%;
   max-width: 240px;
   top: 10%;
-  right: -100px;
+  right: 0%;
   transform: translateY(-10%);
 }
 .heading-title .text-d-p-description {

@@ -117,6 +117,10 @@
   border-radius: 50%;
 }
 
+.social-media-icon:hover .clickable {
+  cursor: pointer;
+}
+
 .facebook path {
   color: #1877f2;
 }

@@ -2,19 +2,21 @@ import { useRef } from 'react';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
 import ProjectDescription from './components/ProductDescription/ProjectDescription';
 import ServiceDescription from './components/ServiceDescription/ServiceDescription';
 import Home from './pages/Home';
 
 const App = () => {
+  // const pathName = l()
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
   const aboutUsRef = useRef(null);
+
   return (
     <div className="App">
-      <Header servicesRef={servicesRef} productsRef={productsRef} aboutUsRef={aboutUsRef} />
       <Router>
+        <Header servicesRef={servicesRef} productsRef={productsRef} aboutUsRef={aboutUsRef} />
         <Routes>
           <Route
             path="/"

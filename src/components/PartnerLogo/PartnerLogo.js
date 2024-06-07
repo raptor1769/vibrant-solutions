@@ -21,7 +21,7 @@ function PartnerLogo() {
       <div>
         <h1>Our Partners</h1>
       </div>
-      <Carousel className="logo-carousel" indicators={false}>
+      <Carousel data-bs-theme="dark" className="logo-carousel" indicators={true} controls={false}>
         <Carousel.Item className="logo-carousel-item">
           <div className="logo-container">
             <img className="d-block logo-carousel-img" src={plogo1} alt="Company Logo 1" />

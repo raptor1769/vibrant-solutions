@@ -38,6 +38,8 @@
   border: 1px solid White;
   justify-content: space-between;
   background-color: white;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-item:hover {
@@ -73,9 +75,6 @@
   .header-logo-container {
     margin-left: 0;
     margin-bottom: 2rem;
-  }
-  .logo {
-    margin-left: 6rem;
   }
   .nav-container {
     margin-left: 0.3rem;
