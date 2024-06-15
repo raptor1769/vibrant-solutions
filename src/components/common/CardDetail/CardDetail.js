@@ -13,7 +13,7 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
         <div className="heading-title">
           <h1>{title}</h1>
           <p>{description}</p>
-          <div className="heading-title">
+          <div className="heading-title bg-color">
             <h1>Key Features</h1>
             {KeyFeatures?.map((item, key) => {
               return (
