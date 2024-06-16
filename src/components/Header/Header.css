@@ -3,22 +3,21 @@
   display: flex;
   margin-top: 18px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 32px;
   margin-bottom: 2rem;
 }
 
 .header-logo-container {
   max-height: 64px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 220px;
   margin-left: 32px;
-  margin-top: 0.5rem;
 }
 
 .logo {
-  width: 200px;
+  height: 64px;
 }
 
 .nav-container {
@@ -35,7 +34,7 @@
   padding: 8px 16px;
   align-items: center;
   font-size: 1rem;
-  border: 1px solid White;
+  border: 1px solid white;
   justify-content: space-between;
   background-color: white;
   text-decoration: none;
@@ -78,5 +77,55 @@
   }
   .nav-container {
     margin-left: 0.3rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: -100% !important;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  font-weight: 800;
+}
+
+/* Ensure dropdown stays within viewport */
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    right: auto;
+    left: 0;
+    transform: translateX(-20%);
   }
 }

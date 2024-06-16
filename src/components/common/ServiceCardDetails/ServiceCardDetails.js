@@ -11,56 +11,55 @@ const ServiceCardDetails = ({ title, type, description, Installation, Extras, ge
           <img className="product-img-resize" src={img} />
         </div>
         <div className="heading-title">
-          <h1>{title}</h1>
+          <h3>{title}</h3>
           <p>{description}</p>
-          {Installation && (
-            <div className="heading-title">
-              <h1>Installation</h1>
-              <p>{Installation}</p>
-            </div>
-          )}
-          {services && (
-            <div className="heading-title">
-              <h1 className="large-text">Services</h1>
-              {services?.map((item, key) => {
-                return (
-                  <div key={key}>
-                    <p>
-                      <b>
-                        <h3>{item.name}</h3>
-                      </b>
-
-                      <p className="text-p-description">{item.desc}</p>
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-          {Extras && (
-            <div className="heading-title">
-              <h1 className="large-text">Why Choose Us</h1>
-              {Extras?.map((item, key) => {
-                return (
-                  <div key={key}>
-                    <p>
-                      <b>
-                        <h3>{item.name}</h3>
-                      </b>
-
-                      <p className="text-p-description">{item.desc}</p>
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-          <div className="heading-title">
-            <h1>Get In Touch With Us</h1>
-            <p>{getInTouch}</p>
-          </div>
         </div>
+        {Installation && (
+          <div className="heading-title">
+            <h3>Installation</h3>
+            <p>{Installation}</p>
+          </div>
+        )}
+        {services && (
+          <div className="heading-title">
+            <h3 className="large-text">Services</h3>
+            {services?.map((item, key) => {
+              return (
+                <div key={key}>
+                  <p>
+                    <b>
+                      <h3>{item.name}</h3>
+                    </b>
 
+                    <p className="text-p-description">{item.desc}</p>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        {Extras && (
+          <div className="heading-title">
+            <h3 className="large-text">Why Choose Us</h3>
+            {Extras?.map((item, key) => {
+              return (
+                <div key={key}>
+                  <p>
+                    <b>
+                      <h3>{item.name}</h3>
+                    </b>
+
+                    <p className="text-p-description">{item.desc}</p>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        <div className="heading-title">
+          <h3>Get In Touch With Us</h3>
+          <p>{getInTouch}</p>
+        </div>
         <div className="card-button">
           <Link to={`/`} className="Links">
             <button>Back to Homepage</button>
