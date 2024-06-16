@@ -5,11 +5,14 @@
 .product-img-resize {
   width: 100%;
   height: 800px;
+  border-radius: 40px;
 }
 .heading-title {
   background: #f7f5fb;
   text-align: left;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 2rem 6rem 2rem 6rem;
+  border-radius: 40px;
+  margin-top: 24px;
 }
 .heading-title h1 {
   font-size: 70px;

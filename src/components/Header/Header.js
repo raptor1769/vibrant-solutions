@@ -33,14 +33,13 @@ const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
       <div className="nav-container">
         {pathname === '/' ? (
           <>
-            <div className="nav-item dropdown">About Us</div>
+            {/* <div className="nav-item dropdown">About Us</div> */}
             <div
               className="nav-item dropdown"
               onMouseEnter={toggleDropdownServices}
               onMouseLeave={closeDropdownServices}
             >
               <span>Services</span>
-              {console.log(dropdownOpenServices)}
 
               <div className="dropdown-menu">
                 {dropdownOpenServices &&
@@ -62,7 +61,6 @@ const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
               onMouseLeave={closeDropdownProducts}
             >
               <span>Products</span>
-              {console.log(dropdownOpenProducts)}
               <div className="dropdown-menu">
                 {dropdownOpenProducts &&
                   products.map((item) => (

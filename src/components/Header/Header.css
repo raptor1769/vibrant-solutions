@@ -3,22 +3,21 @@
   display: flex;
   margin-top: 18px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 32px;
   margin-bottom: 2rem;
 }
 
 .header-logo-container {
   max-height: 64px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 220px;
   margin-left: 32px;
-  margin-top: 0.5rem;
 }
 
 .logo {
-  width: 200px;
+  height: 64px;
 }
 
 .nav-container {
@@ -91,7 +90,7 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: -100% !important;
   display: none;
   flex-direction: column;
   background-color: white;

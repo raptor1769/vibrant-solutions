@@ -11,52 +11,52 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
           <img className="product-img-resize" src={img} />
         </div>
         <div className="heading-title">
-          <h1>{title}</h1>
+          <h3>{title}</h3>
           <p>{description}</p>
-          <div className="heading-title bg-color">
-            <h1>Key Features</h1>
-            {KeyFeatures?.map((item, key) => {
-              return (
-                <div key={key}>
-                  <p>
-                    <b>
-                      <h3>{item.name}</h3>
-                    </b>
+        </div>
+        <div className="heading-title bg-color">
+          <h3>Key Features</h3>
+          {KeyFeatures?.map((item, key) => {
+            return (
+              <div key={key}>
+                <p>
+                  <b>
+                    <h3>{item.name}</h3>
+                  </b>
 
-                    <p className="text-d-p-description">{item.desc}</p>
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-          <div className="heading-title">
-            <h1 className="large-text">Customization Options</h1>
-            <p>{CustomizationOptions}</p>
-            {Extras?.map((item, key) => {
-              return (
-                <div key={key}>
-                  <p>
-                    <b>
-                      <h3>{item.name}</h3>
-                    </b>
+                  <p className="text-d-p-description">{item.desc}</p>
+                </p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="heading-title">
+          <h3 className="large-text">Customization Options</h3>
+          <p>{CustomizationOptions}</p>
+          {Extras?.map((item, key) => {
+            return (
+              <div key={key}>
+                <p>
+                  <b>
+                    <h3>{item.name}</h3>
+                  </b>
 
-                    <p className="text-p-description">{item.desc}</p>
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-          <div className="heading-title">
-            {Future?.map((item, key) => {
-              return (
-                <div key={key}>
-                  <h1 className="larger-text">{item.name}</h1>
+                  <p className="text-p-description">{item.desc}</p>
+                </p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="heading-title">
+          {Future?.map((item, key) => {
+            return (
+              <div key={key}>
+                <h3 className="larger-text">{item.name}</h3>
 
-                  <p>{item.desc}</p>
-                </div>
-              );
-            })}
-          </div>
+                <p>{item.desc}</p>
+              </div>
+            );
+          })}
         </div>
         <div className="card-button">
           <Link to={`/`} className="Links">
