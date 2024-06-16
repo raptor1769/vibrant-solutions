@@ -14,7 +14,7 @@ function SlideShow() {
         <img src={car1} alt="First slide" className="carousel-item d-block w-100" />
         <Carousel.Caption className="caption">
           <h1>Desktops and Laptops</h1>
-          <p className="ml-7">Empowering Your Digital Journey: Where Innovation Meets Reliability.</p>
+          <p className="ml-7">Trusted Bulk Laptop Rental Services in Hyderabad</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="carousel-opacity">
@@ -28,14 +28,14 @@ function SlideShow() {
         <img src={car3} alt="Third slide" className="carousel-item d-block w-100" />
         <Carousel.Caption className="caption">
           <h1>Networking</h1>
-          <p className="ml-7">Connecting Computers Globally: Harnessing the Power of the Internet.</p>
+          <p className="ml-7">Time is Money...… Choose Right Team To Support you on Right Time!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="carousel-opacity">
         <img src={car5} alt="Fifth slide" className="carousel-item d-block w-100" />
         <Carousel.Caption className="caption">
           <h1>Security</h1>
-          <p className="ml-7">Protecting Your Data: Simple, Strong Computer Security.</p>
+          <p className="ml-7">Secure your Office Equipment!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="carousel-opacity">
