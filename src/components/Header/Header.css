@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 32px;
   margin-bottom: 2rem;
+  background-color: #445742;
 }
 
 .header-logo-container {
@@ -14,6 +15,7 @@
   align-items: center;
   max-width: 220px;
   margin-left: 32px;
+  background-color: white;
 }
 
 .logo {
@@ -26,25 +28,28 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .header-container .nav-item {
   display: flex;
-  padding: 8px 16px;
+  padding-right: 16px;
+  /* padding-top: -10px; */
   align-items: center;
   font-size: 1rem;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   justify-content: space-between;
   background-color: white;
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #445742;
 }
 
 .nav-item:hover {
   cursor: pointer;
   font-weight: 800;
   border-bottom: 1px solid black;
+  color: black;
 }
 
 .button-container {

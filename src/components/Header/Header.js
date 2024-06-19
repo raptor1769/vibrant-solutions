@@ -36,6 +36,27 @@ const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
             {/* <div className="nav-item dropdown">About Us</div> */}
             <div
               className="nav-item dropdown"
+              onMouseEnter={toggleDropdownProducts}
+              onMouseLeave={closeDropdownProducts}
+            >
+              <span>Rental Repairs</span>
+              <div className="dropdown-menu">
+                {dropdownOpenProducts &&
+                  products.map((item) => (
+                    <Link
+                      key={item.id}
+                      className="dropdown-item Links"
+                      to={`/products/${item.id}`}
+                      onClick={closeDropdownProducts}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+              </div>
+            </div>
+
+            <div
+              className="nav-item dropdown"
               onMouseEnter={toggleDropdownServices}
               onMouseLeave={closeDropdownServices}
             >
@@ -55,26 +76,7 @@ const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
                   ))}
               </div>
             </div>
-            <div
-              className="nav-item dropdown"
-              onMouseEnter={toggleDropdownProducts}
-              onMouseLeave={closeDropdownProducts}
-            >
-              <span>Products</span>
-              <div className="dropdown-menu">
-                {dropdownOpenProducts &&
-                  products.map((item) => (
-                    <Link
-                      key={item.id}
-                      className="dropdown-item Links"
-                      to={`/products/${item.id}`}
-                      onClick={closeDropdownProducts}
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-              </div>
-            </div>
+
             {/* <div className="dropdown-menu">
                   <Link className="dropdown-item" to="/services/service1" onClick={closeDropdown}>
                     Service 1
