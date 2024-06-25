@@ -10,12 +10,34 @@ import Twitter from '../../assets/svgs/Twitter';
 import Youtube from '../../assets/svgs/Youtube';
 import Phone from '../../assets/svgs/Phone';
 import Email from '../../assets/svgs/Email';
+import servicesData from '../../assets/staticData/services.json';
+import products from '../../assets/staticData/products.json';
+import { useLocation, Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
   const handleClick = (e) => {
     if (e === 'youtube') window.location.href = 'https://www.youtube.com/channel/UC_vTbkS9h7aPrPpItHggQew';
     else if (e === 'instagram') window.location.href = 'https://www.instagram.com/its_vits2024/';
     else if (e === 'linkedIn') window.location.href = 'https://www.linkedin.com/company/its-vits/';
+  };
+  const { pathname } = useLocation();
+  const [dropdownOpenServices, setDropdownOpen] = useState(false);
+  const [dropdownOpenProducts, setDropdownOpenProducts] = useState(false);
+
+  const toggleDropdownServices = () => {
+    setDropdownOpen(!dropdownOpenServices);
+  };
+
+  const closeDropdownServices = () => {
+    setDropdownOpen(false);
+  };
+  const toggleDropdownProducts = () => {
+    setDropdownOpenProducts(!dropdownOpenProducts);
+  };
+
+  const closeDropdownProducts = () => {
+    setDropdownOpenProducts(false);
   };
   return (
     <>
@@ -83,13 +105,54 @@ const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
         </div>
         <div className="ain-footer-links">
           <div className="ain-footer-links-logo">
-            <img src={Logo} alt="logo" className="logo-footer" />
+            <img src={Logo} alt="company logo" className="logo-footer" />
           </div>
-
           <div className="ain-footer-links-redirects">
-            <ScrollTo ref={servicesRef}>Services</ScrollTo>
-            <ScrollTo ref={productsRef}>Products</ScrollTo>
-            {/* <ScrollTo ref={aboutUsRef}>About US</ScrollTo> */}
+            <div className="nav-item">
+              <Link
+                to="/services"
+                onMouseEnter={toggleDropdownServices}
+                onMouseLeave={closeDropdownServices}
+                className="aboutUs"
+              >
+                Services
+              </Link>
+              {dropdownOpenServices && (
+                <div className="dropdown">
+                  <div className="dropdown-menu">
+                    {servicesData.map((service) => (
+                      <Link key={service.id} to={`/services/${service.id}`} className="dropdown-item">
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="nav-item">
+              <Link
+                to="/products"
+                onMouseEnter={toggleDropdownProducts}
+                onMouseLeave={closeDropdownProducts}
+                className="aboutUs"
+              >
+                Products
+              </Link>
+              {dropdownOpenProducts && (
+                <div className="dropdown">
+                  <div className="dropdown-menu">
+                    {products.map((product) => (
+                      <Link key={product.id} to={`/products/${product.id}`} className="dropdown-item">
+                        {product.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            <ScrollTo to="aboutUsRef" className="aboutUs">
+              About Us
+            </ScrollTo>
           </div>
         </div>
       </div>

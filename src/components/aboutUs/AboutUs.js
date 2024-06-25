@@ -18,9 +18,7 @@ export const AboutUs = forwardRef((props, ref) => {
         <div className="about-us-container" ref={ref}>
           <h1>About Vibrant Solutions</h1>
           <p>
-            At Vibrant Solutions, we are dedicated to providing innovative and dynamic solutions to meet your business
-            needs. Our team of experts leverages the latest technologies and industry best practices to deliver
-            exceptional results.
+          Vibrant IT Solutions is a dynamic and forward-thinking IT service company. Established in 2023 we have consistently delivered high-quality IT Solutions to our clients, earning us a reputation for reliability and excellence.
           </p>
           <div className="about-us-section">
             <h2>Our Mission</h2>
@@ -30,7 +28,7 @@ export const AboutUs = forwardRef((props, ref) => {
               trust, integrity, and excellence.
             </p>
           </div>
-          <div className="about-us-section">
+          {/* <div className="about-us-section">
             <h2>Our Values</h2>
             <ul>
               <li>
@@ -46,12 +44,18 @@ export const AboutUs = forwardRef((props, ref) => {
                 <b>Excellence:</b> Striving for perfection in every project we undertake.
               </li>
             </ul>
-          </div>
-          <div className="about-us-section">
+          </div> */}
+          {/* <div className="about-us-section">
             <h2>Our Team</h2>
             <p>
               Our team comprises seasoned professionals with diverse backgrounds and expertise. We are passionate about
               technology and committed to delivering exceptional service to our clients.
+            </p>
+          </div> */}
+          <div className="about-us-section">
+            <h2>Our Vision</h2>
+            <p>
+            Our vision is to be the leading provider of IT Rentals and Sales, redefining the way businesses harness the power of technology to propel their success.
             </p>
           </div>
         </div>

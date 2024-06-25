@@ -2,13 +2,38 @@ import './CardDetail.css';
 import Cube1 from '../../../assets/images/Cube4.png';
 import Cube2 from '../../../assets/images/Cube8.png';
 import { Link } from 'react-router-dom';
+import amc from '../../../assets/images/Laptop repair 1.jpg';
+import biometric from '../../../assets/images/Desktop AMC.jpg';
+import cctv from '../../../assets/images/networking1.jpg';
+import network from '../../../assets/images/Network printer.jpg';
+import cable from '../../../assets/images/Server repair.jpg';
+import cloud from '../../../assets/images/IT Services.jpg';
 
-const CardDetail = ({ title, type, description, series, KeyFeatures, CustomizationOptions, Extras, Future, img }) => {
+const CardDetail = ({ title, type, description, series, KeyFeatures, CustomizationOptions, Extras, Future }) => {
+  const renderPic =() =>{
+    switch (title){
+      case 'Laptops':
+        return <img src={amc} className='product-img-resize'/>
+      case 'Desktop':
+        return <img src={biometric} className='product-img-resize'/>
+      case 'Networking Devices' :
+        return <img src={cctv} className='product-img-resize'/>
+      case 'Servers' :
+        return <img src={cable} className='product-img-resize'/>
+      case 'Printers & Scanners' :
+         return <img src={network} className='product-img-resize'/>
+      case 'Cloud Services' :
+        return <img src={cloud} className='product-img-resize'/>  
+      default:
+        return <img src={''} className='product-img-resize'/>
+    }
+  }
   return (
     <div className={`card-container ${type}-card`}>
       <div className="details">
-        <div className="card-image">
-          <img className="product-img-resize" src={img} />
+        <div className="card-image">{
+          renderPic()
+          }
         </div>
         <div className="heading-title">
           <h3>{title}</h3>
