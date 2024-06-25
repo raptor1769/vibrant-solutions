@@ -33,7 +33,13 @@ const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
       <div className="nav-container">
         {pathname === '/' ? (
           <>
-            {/* <div className="nav-item dropdown">About Us</div> */}
+            <div className="nav-item dropdown">
+              <Link
+                      className=" nav-item"
+                      to={`/aboutUs`}
+                    >
+                      <span>About Us</span>
+                    </Link></div>
             <div
               className="nav-item dropdown"
               onMouseEnter={toggleDropdownProducts}
