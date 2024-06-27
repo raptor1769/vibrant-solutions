@@ -1,5 +1,6 @@
 .carousel {
   width: 100%;
+  position: relative;
 }
 
 .carousel-item {
@@ -62,15 +63,17 @@
     top: 45%;
     transform: translateY(-45%);
   }
+  .carousel-inner{
+    height: 22rem!important;
+  }
 }
-
+.carousel-inner{
+  height: 44rem;
+}
 .carousel .carousel-indicators {
   display: flex;
   justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
+  margin-top: 10px; 
 }
 
 .carousel .carousel-indicators button {

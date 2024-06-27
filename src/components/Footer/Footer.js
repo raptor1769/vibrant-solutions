@@ -108,51 +108,19 @@ const Footer = ({ servicesRef, productsRef, aboutUsRef }) => {
             <img src={Logo} alt="company logo" className="logo-footer" />
           </div>
           <div className="ain-footer-links-redirects">
-            <div className="nav-item">
+            
+          <div className="nav-item dropdown">
+          <Link className="nav-item" to="/">
+            <span>Home</span>
+          </Link>
+          </div>
+          <div className="nav-item dropdown">
               <Link
-                to="/services"
-                onMouseEnter={toggleDropdownServices}
-                onMouseLeave={closeDropdownServices}
-                className="aboutUs"
-              >
-                Services
-              </Link>
-              {dropdownOpenServices && (
-                <div className="dropdown">
-                  <div className="dropdown-menu">
-                    {servicesData.map((service) => (
-                      <Link key={service.id} to={`/services/${service.id}`} className="dropdown-item">
-                        {service.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-            <div className="nav-item">
-              <Link
-                to="/products"
-                onMouseEnter={toggleDropdownProducts}
-                onMouseLeave={closeDropdownProducts}
-                className="aboutUs"
-              >
-                Products
-              </Link>
-              {dropdownOpenProducts && (
-                <div className="dropdown">
-                  <div className="dropdown-menu">
-                    {products.map((product) => (
-                      <Link key={product.id} to={`/products/${product.id}`} className="dropdown-item">
-                        {product.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-            <ScrollTo to="aboutUsRef" className="aboutUs">
-              About Us
-            </ScrollTo>
+                      className="nav-item"
+                      to={`/aboutUs`}
+                    >
+                      <span>About Us</span>
+                    </Link></div>
           </div>
         </div>
       </div>

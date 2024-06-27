@@ -8,8 +8,9 @@ import cctv from '../../../assets/images/networking1.jpg';
 import network from '../../../assets/images/Network printer.jpg';
 import cable from '../../../assets/images/Server repair.jpg';
 import cloud from '../../../assets/images/IT Services.jpg';
+import img from '../../../assets/images/aboutus.jpeg';
 
-const CardDetail = ({ title, type, description, series, KeyFeatures, CustomizationOptions, Extras, Future }) => {
+const CardDetail = ({ title, type, description, series, KeyFeatures, CustomizationOptions, Extras, Future ,header,mission,vision}) => {
   const renderPic =() =>{
     switch (title){
       case 'Laptops':
@@ -24,6 +25,8 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
          return <img src={network} className='product-img-resize'/>
       case 'Cloud Services' :
         return <img src={cloud} className='product-img-resize'/>  
+      case 'About Us':
+        return <img src={img} className=' about'/>
       default:
         return <img src={''} className='product-img-resize'/>
     }
@@ -36,10 +39,22 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
           }
         </div>
         <div className="heading-title">
-          <h3>{title}</h3>
+          {header!=''?<h3>{header}</h3>:<h3>{title}</h3>}
           <p>{description}</p>
         </div>
-        <div className="heading-title bg-color">
+
+        {mission && <div className="heading-title">
+          <h3>Our Mission</h3>
+          <p className='mission'>{mission}</p>
+        </div>}
+
+
+        {vision && <div className="heading-title">
+          <h3>Our Vision</h3>
+          <p className='vision'>{vision}</p>
+        </div>}
+
+        {KeyFeatures && <div className="heading-title bg-color">
           <h3>Key Features</h3>
           {KeyFeatures?.map((item, key) => {
             return (
@@ -54,11 +69,11 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
               </div>
             );
           })}
-        </div>
-        <div className="heading-title">
+        </div>}
+        {Extras && <div className="heading-title">
           <h3 className="large-text">Customization Options</h3>
           <p>{CustomizationOptions}</p>
-          {Extras?.map((item, key) => {
+          { Extras?.map((item, key) => {
             return (
               <div key={key}>
                 <p>
@@ -71,8 +86,8 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
               </div>
             );
           })}
-        </div>
-        <div className="heading-title">
+        </div>}
+        {Future && <div className="heading-title">
           {Future?.map((item, key) => {
             return (
               <div key={key}>
@@ -82,7 +97,7 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
               </div>
             );
           })}
-        </div>
+        </div>}
         <div className="card-button">
           <Link to={`/`} className="Links">
             <button>Back to Homepage</button>
