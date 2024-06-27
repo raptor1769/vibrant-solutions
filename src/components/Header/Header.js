@@ -33,6 +33,9 @@ const Header = ({ servicesRef, productsRef, aboutUsRef }) => {
       <div className="nav-container">
         {pathname === '/' ? (
           <>
+          <Link className="nav-item" to="/">
+            Home
+          </Link>
             <div className="nav-item dropdown">
               <Link
                       className=" nav-item"

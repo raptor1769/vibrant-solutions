@@ -7,6 +7,11 @@
   height: 800px;
   border-radius: 40px;
 }
+.about{
+  width: 100%;
+  height:700px;
+  border-radius: 40px;
+}
 .heading-title {
   background: #f7f5fb;
   text-align: left;
@@ -27,6 +32,10 @@
 .heading-title p {
   margin: 20px 0; /* Add margin for spacing */
   font-size: 16px; /* Adjust font size */
+  /* text-align: center; */
+}
+.mission,.vision{
+  text-align: left!important;
 }
 
 /* .heading-title b,
@@ -73,13 +82,14 @@
   margin-right: 0px;
   font-size: 20px;
 }
+
 @media screen and (max-width: 767px) {
   .card-image {
     width: 100%;
     height: 300px;
   }
 
-  .product-img-resize {
+  .product-img-resize,.about{
     width: 100%;
     height: 270px;
   }

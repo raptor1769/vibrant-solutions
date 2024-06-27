@@ -48,7 +48,7 @@
 .nav-item:hover {
   cursor: pointer;
   font-weight: 800;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   color: black;
 }
 

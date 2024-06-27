@@ -91,7 +91,7 @@
   display: block;
 }
 
-.dropdown-menu {
+.dropdown-menu1 {
   display: none;
   position: absolute; /* Position the dropdown absolutely */
   bottom: 100%; /* Align it to the top of the parent */
@@ -181,4 +181,10 @@
 
 .pinterest path {
   color: #bd081c;
+}
+
+
+.dropdown .nav-item{
+  text-decoration: none;
+  color:black
 }
