@@ -10,6 +10,7 @@ import cable from '../../../assets/images/Server repair.jpg';
 import cloud from '../../../assets/images/IT Services.jpg';
 import img from '../../../assets/images/aboutus.jpeg';
 
+
 const CardDetail = ({ title, type, description, series, KeyFeatures, CustomizationOptions, Extras, Future ,header,mission,vision}) => {
   const renderPic =() =>{
     switch (title){
@@ -33,77 +34,115 @@ const CardDetail = ({ title, type, description, series, KeyFeatures, Customizati
   }
   return (
     <div className={`card-container ${type}-card`}>
-      <div className="details">
-        <div className="card-image">{
-          renderPic()
-          }
-        </div>
-        <div className="heading-title">
-          {header!=''?<h3>{header}</h3>:<h3>{title}</h3>}
-          <p>{description}</p>
-        </div>
+      
+        {title=='About Us'?(
+          <div className='aboutUs'>
+          <div className='aboutUs-title'>
+              <center>{header!=''?<h1>{header}</h1>:<h1>{title}</h1>}</center>
+          </div>
+          <div className='heading-title'>
+              <center><p>{description}</p></center>
+          </div>
+          <div className="details-card">
+            <div className="card-image-aboutUs">{
+              renderPic()
+              }
+            </div>
+            <div className='card-data'>
+                {mission && <div className="heading-title">
+                  <h3>Our Mission</h3>
+                  <p className='mission'>{mission}</p>
+                </div>}
+                {vision && <div className="heading-title">
+                  <h3>Our Vision</h3>
+                  <p className='vision'>{vision}</p>
+                </div>}
+            </div>
+            </div>
+          </div>
+        )
+        :
+        (
+          <>
+          <div className="details-card">
+          <div className="card-image">
+            {
+              renderPic()
+            }
+          </div>
 
-        {mission && <div className="heading-title">
-          <h3>Our Mission</h3>
-          <p className='mission'>{mission}</p>
-        </div>}
+            <div className="heading-title">
+              {header!=''?<h3>{header}</h3>:<h3>{title}</h3>}
+              <p>{description}</p>
+            </div>
+
+            {mission && <div className="heading-title">
+              <h3>Our Mission</h3>
+              <p className='mission'>{mission}</p>
+            </div>}
 
 
-        {vision && <div className="heading-title">
-          <h3>Our Vision</h3>
-          <p className='vision'>{vision}</p>
-        </div>}
+            {vision && <div className="heading-title">
+              <h3>Our Vision</h3>
+              <p className='vision'>{vision}</p>
+            </div>}
 
-        {KeyFeatures && <div className="heading-title bg-color">
-          <h3>Key Features</h3>
-          {KeyFeatures?.map((item, key) => {
-            return (
-              <div key={key}>
-                <p>
-                  <b>
-                    <h3>{item.name}</h3>
-                  </b>
+            {KeyFeatures && <div className="heading-title bg-color">
+              <h3>Key Features</h3>
+              {KeyFeatures?.map((item, key) => {
+                return (
+                  <div key={key}>
+                    <p>
+                      <b>
+                        <h3>{item.name}</h3>
+                      </b>
 
-                  <p className="text-d-p-description">{item.desc}</p>
-                </p>
-              </div>
-            );
-          })}
-        </div>}
-        {Extras && <div className="heading-title">
-          <h3 className="large-text">Customization Options</h3>
-          <p>{CustomizationOptions}</p>
-          { Extras?.map((item, key) => {
-            return (
-              <div key={key}>
-                <p>
-                  <b>
-                    <h3>{item.name}</h3>
-                  </b>
+                      <p className="text-d-p-description">{item.desc}</p>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>}
+            {Extras && <div className="heading-title">
+              <h3 className="large-text">Customization Options</h3>
+              <p>{CustomizationOptions}</p>
+              { Extras?.map((item, key) => {
+                return (
+                  <div key={key}>
+                    <p>
+                      <b>
+                        <h3>{item.name}</h3>
+                      </b>
 
-                  <p className="text-p-description">{item.desc}</p>
-                </p>
-              </div>
-            );
-          })}
-        </div>}
-        {Future && <div className="heading-title">
-          {Future?.map((item, key) => {
-            return (
-              <div key={key}>
-                <h3 className="larger-text">{item.name}</h3>
+                      <p className="text-p-description">{item.desc}</p>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>}
+            {Future && <div className="heading-title">
+              {Future?.map((item, key) => {
+                return (
+                  <div key={key}>
+                    <h3 className="larger-text">{item.name}</h3>
 
-                <p>{item.desc}</p>
-              </div>
-            );
-          })}
-        </div>}
-        <div className="card-button">
+                    <p>{item.desc}</p>
+                  </div>
+                );
+              })}
+            </div>}
+            </div>
+          </>
+          
+          
+        )
+        }
+       
+        {title!="About Us" && <div className="card-button">
           <Link to={`/`} className="Links">
             <button>Back to Homepage</button>
           </Link>
-        </div>
-      </div>
+        </div>}
     </div>
   );
 };

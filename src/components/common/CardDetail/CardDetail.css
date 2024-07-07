@@ -2,15 +2,39 @@
   width: 100%;
   height: 800px;
 }
+.card-image-aboutUs{
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 .product-img-resize {
   width: 100%;
   height: 800px;
   border-radius: 40px;
 }
-.about{
-  width: 100%;
-  height:700px;
+.details-card{
+  display: flex;
+}
+.card-data{
+  width: 90%;
+}
+.aboutUs{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(255, 255, 255);
   border-radius: 40px;
+}
+.aboutUs-title{
+  padding: 2rem 0 2rem 0;
+  background: #f7f5fb;
+  border-radius: 40px;
+}
+.about{
+  width: 90%;
+  height: 34rem;
+  margin-top: 2rem;
 }
 .heading-title {
   background: #f7f5fb;
@@ -88,15 +112,29 @@
     width: 100%;
     height: 300px;
   }
+  .details-card ,.details-card {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+  }
+  .card-container{
+    margin-bottom: 2rem;
+  }
+  .card-image-aboutUs {
+    width: 100%;
+    height: 300px;
+  }
 
   .product-img-resize,.about{
     width: 100%;
     height: 270px;
+    border-radius: 40px;
   }
 
-  .heading-title {
+  .details-card .heading-title {
     margin-top: 1rem;
-    text-align: center; /* Center-align the text */
+    text-align: center;
+    width:100%;
+    padding: 2rem 3rem 2rem 3rem;
   }
 
   .heading-title h1 {
